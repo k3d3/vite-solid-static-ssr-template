@@ -1,0 +1,20 @@
+{
+  "name": "vite-solid-static-ssr-template",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "mkdir -p ssr && touch ssr/prerender.mjs && vite build --ssr src/prerender.tsx --outDir ssr && vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-solid": "^2.3.0"
+  },
+  "dependencies": {
+    "solid-js": "^1.5.1"
+  }
+}
